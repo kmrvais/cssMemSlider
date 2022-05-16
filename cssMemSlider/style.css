@@ -48,7 +48,7 @@ body {
     font-size: 1rem;
     flex-shrink: 0;
     letter-spacing: 0.1rem;
-    max-width: 50%;
+    width: 100%;
 }
 
 .slider__controls {
@@ -66,12 +66,17 @@ body {
 
 .slider__button-point div {
     background: #71ABFF;
-    border: 1px solid #71ABFF;
+    border: 2px solid #71ABFF;
     border-radius: 100%;
     display: block;
-    height: 10px;
-    width: 10px;
+    height: 12px;
+    width: 12px;
     transition: .5s;
+}
+
+.slider__button-point:hover div {
+    background: #ffffff;
+    border-color: #ffffff;
 }
 
 #slide-first:checked ~ .slider__wrapper > .slider__slide_first,
@@ -89,6 +94,7 @@ body {
 #slide-fourth:checked ~ .slider__controls .slider__button-point:nth-of-type(4) div,
 #slide-fifth:checked ~ .slider__controls .slider__button-point:nth-of-type(5) div {
     background: transparent;
+    border: 2px solid #71ABFF;
 }
 
 #slide-first:checked ~ .slider__controls .slider__button-point:nth-of-type(1),
@@ -133,6 +139,7 @@ body {
 
     .slider__slide-name {
         font-size: 1.1rem;
+        width: 50%;
     }
 
     .slider__controls {
@@ -162,7 +169,7 @@ body {
     }
 
     .slider__button-point div {
-        height: 12px;
-        width: 12px;
+        height: 14px;
+        width: 14px;
     }
 }
