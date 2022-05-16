@@ -79,6 +79,11 @@ body {
     border-color: #ffffff;
 }
 
+.slider__button-point:active div {
+    background: mediumvioletred;
+    border-color: mediumvioletred;
+}
+
 #slide-first:checked ~ .slider__wrapper > .slider__slide_first,
 #slide-second:checked ~ .slider__wrapper > .slider__slide_second,
 #slide-third:checked ~ .slider__wrapper > .slider__slide_third,
