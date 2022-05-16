@@ -49,6 +49,7 @@ body {
     left: 0;
     bottom: 5px;
     max-width: 50%;
+    transform: translateX(-100%);
 }
 
 .slider__controls {
@@ -88,6 +89,15 @@ body {
 #slide-third:checked ~ .slider__wrapper > .slider__slide_third .slider__slide-img,
 #slide-fourth:checked ~ .slider__wrapper > .slider__slide_fourth .slider__slide-img,
 #slide-fifth:checked ~ .slider__wrapper > .slider__slide_fifth .slider__slide-img {
+    transform: translateX(0);
+    transition: 0.5s;
+}
+
+#slide-first:checked ~ .slider__wrapper > .slider__slide_first .slider__slide-name,
+#slide-second:checked ~ .slider__wrapper > .slider__slide_second .slider__slide-name,
+#slide-third:checked ~ .slider__wrapper > .slider__slide_third .slider__slide-name,
+#slide-fourth:checked ~ .slider__wrapper > .slider__slide_fourth .slider__slide-name,
+#slide-fifth:checked ~ .slider__wrapper > .slider__slide_fifth .slider__slide-name {
     transform: translateX(0);
     transition: 0.5s;
 }
